@@ -12,8 +12,8 @@ A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
 * Dev server with live reloading, HMR
 * Support for CSS/SCSS (with Autoprefixer), image assets
 * Bundling and minification for deployment
-* Basic app scaffold, using `Html.beginnerProgram`
 * A snippet of example code to get you started!
+* Route support
 
 
 ### Install:
