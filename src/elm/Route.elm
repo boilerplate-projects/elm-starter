@@ -18,9 +18,13 @@ matchers =
         ]
 
 
+
+-- Change parsePath to parseHash to use hash
+
+
 parseLocation : Location -> Route
 parseLocation location =
-    case (parseHash matchers location) of
+    case (parsePath matchers location) of
         Just route ->
             route
 
