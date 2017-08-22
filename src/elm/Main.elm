@@ -1,10 +1,11 @@
 module Main exposing (..)
 
-import Navigation exposing (Location)
-import Model exposing (Model)
-import Update exposing (update)
+import Navigation exposing (..)
+import Model exposing (..)
+import Update exposing (..)
 import Message exposing (..)
 import View exposing (..)
+import Subscription exposing (..)
 import Route
 
 
@@ -15,11 +16,6 @@ init location =
             Route.parseLocation location
     in
         ( Model.initialModel currentRoute, Cmd.none )
-
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-    Sub.none
 
 
 main : Program Never Model Msg
