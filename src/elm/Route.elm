@@ -11,7 +11,8 @@ import Message exposing (Msg)
 
 type Route
     = Home
-    | About
+    | Players
+    | Player String
     | NotFound
 
 
@@ -19,7 +20,8 @@ matchers : Parser (Route -> a) a
 matchers =
     oneOf
         [ map Home top
-        , map About (s "about")
+        , map Player (s "players" </> string)
+        , map Players (s "players")
         ]
 
 

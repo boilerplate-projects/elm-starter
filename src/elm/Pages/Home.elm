@@ -11,5 +11,8 @@ view : Model -> Html Msg
 view model =
     div [ class "page" ]
         [ text "Home"
-        , a (Route.onClick "about") [ text "about" ]
+        , br [] []
+        , a (Route.onClick "players") [ text "players" ]
+        , br [] []
+        , a (Route.onClick "players/1") [ text "players/1" ]
         ]

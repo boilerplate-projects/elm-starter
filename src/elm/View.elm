@@ -5,21 +5,29 @@ import Model exposing (Model)
 import Message exposing (Msg)
 import Route exposing (Route)
 import Pages.Home
-import Pages.About
+import Pages.Players
+import Pages.Player
 import Pages.NotFound
 
 
 page : Model -> Html Msg
 page model =
-    case model.route of
-        Route.Home ->
-            Pages.Home.view model
+    let
+        _ =
+            Debug.log "model" model
+    in
+        case model.route of
+            Route.Home ->
+                Pages.Home.view model
 
-        Route.About ->
-            Pages.About.view model
+            Route.Players ->
+                Pages.Players.view model
 
-        Route.NotFound ->
-            Pages.NotFound.view model
+            Route.Player id ->
+                Pages.Player.view model id
+
+            Route.NotFound ->
+                Pages.NotFound.view model
 
 
 view : Model -> Html Msg
