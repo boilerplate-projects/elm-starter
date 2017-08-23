@@ -10,7 +10,10 @@ view : Html Msg
 view =
     header []
         [ a (Route.onClick "/")
-            [ div [ class "logo" ] [ text "Elm starter" ]
+            [ div [ class "logo" ]
+                [ img [ src "/static/img/elm.svg" ] []
+                , text "Elm starter"
+                ]
             ]
         , nav []
             [ a (Route.onClick "/players") [ text "players" ]

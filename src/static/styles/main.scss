@@ -33,9 +33,17 @@ header {
     padding: 0 1em;
 
     .logo {
+        display: flex;
+        flex-flow: row;
         font-weight: bold;
         padding: 1em;
         color: #5a6378;
+        align-items: center;
+        img {
+            display: block;
+            width: 40px;
+            padding-right: 10px;
+        }
     }
 
     nav {
@@ -50,9 +58,16 @@ header {
     }
 }
 
-// main {
-//     padding: 20px;
-// }
+p {
+    opacity: 0.6;
+    a {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    padding: 2em;
+}
 
 .players {
     display: flex;
