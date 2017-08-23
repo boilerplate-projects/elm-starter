@@ -1,8 +1,12 @@
 # Elm starter
 
+![image](https://user-images.githubusercontent.com/5122156/29625024-e3dc6660-882a-11e7-835b-195ff0ff2c0b.png)
+
 A starter kit and reference application based in this repo below:
 
 https://github.com/elm-community/elm-webpack-starter
+
+
 
 ### About:
 A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
