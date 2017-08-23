@@ -2,7 +2,7 @@ module Update exposing (..)
 
 import Model exposing (Model)
 import Message exposing (..)
-import Route exposing (..)
+import Route
 import Navigation
 
 
@@ -18,3 +18,6 @@ update msg model =
                     Route.parseLocation location
             in
                 ( { model | route = newRoute }, Cmd.none )
+
+        Message.OnFetchPlayers response ->
+            ( { model | players = response }, Cmd.none )

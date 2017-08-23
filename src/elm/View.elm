@@ -3,7 +3,7 @@ module View exposing (..)
 import Html exposing (..)
 import Model exposing (Model)
 import Message exposing (Msg)
-import Route exposing (Route)
+import Route
 import Pages.Home
 import Pages.Players
 import Pages.Player

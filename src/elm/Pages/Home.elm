@@ -1,7 +1,6 @@
 module Pages.Home exposing (..)
 
 import Html exposing (..)
-import Html.Attributes exposing (..)
 import Model exposing (Model)
 import Message exposing (Msg)
 

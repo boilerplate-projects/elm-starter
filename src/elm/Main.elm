@@ -7,6 +7,7 @@ import Message exposing (..)
 import View exposing (..)
 import Subscription exposing (..)
 import Route
+import Command
 
 
 init : Location -> ( Model, Cmd Msg )
@@ -15,7 +16,7 @@ init location =
         currentRoute =
             Route.parseLocation location
     in
-        ( Model.initialModel currentRoute, Cmd.none )
+        ( Model.initialModel currentRoute, Command.fetchPlayers )
 
 
 main : Program Never Model Msg
