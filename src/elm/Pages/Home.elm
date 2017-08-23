@@ -16,5 +16,9 @@ view model =
                 , a [ href "http://elm-lang.org/" ] [ text "Elm" ]
                 , text " apps."
                 ]
+            , a [ class "button", href "https://github.com/dbeff/elm-starter", target "_blank" ]
+                [ img [ class "icon", src "/static/img/github.svg" ] []
+                , text "Github"
+                ]
             ]
         ]
