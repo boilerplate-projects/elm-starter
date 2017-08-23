@@ -14,6 +14,5 @@ view =
             ]
         , nav []
             [ a (Route.onClick "/players") [ text "players" ]
-            , a (Route.onClick "/players/1") [ text "players/1" ]
             ]
         ]

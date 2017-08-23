@@ -5,11 +5,12 @@ import Html.Attributes exposing (..)
 import RemoteData exposing (WebData)
 import Model exposing (Model)
 import Message exposing (Msg)
+import Route
 import Types.Player exposing (..)
 
 
-renderPlayers : WebData (List Player) -> Html Msg
-renderPlayers response =
+maybePlayers : WebData (List Player) -> Html Msg
+maybePlayers response =
     case response of
         RemoteData.NotAsked ->
             text ""
@@ -18,40 +19,34 @@ renderPlayers response =
             text "Loading..."
 
         RemoteData.Success players ->
-            list players
+            renderPlayers players
 
-        -- list players
         RemoteData.Failure error ->
             text (toString error)
 
 
-list : List Player -> Html Msg
-list players =
-    div [ class "p2" ]
-        [ table []
-            [ thead []
-                [ tr []
-                    [ th [] [ text "Picture" ]
-                    , th [] [ text "Id" ]
-                    , th [] [ text "Name" ]
+renderPlayers : List Player -> Html Msg
+renderPlayers players =
+    div [ class "players" ] (List.map renderPlayer players)
+
+
+renderPlayer : Player -> Html Msg
+renderPlayer player =
+    div [ class "item" ]
+        [ a (Route.onClick ("/players/" ++ player.id))
+            [ div [ class "wrapper" ]
+                [ div [ class "picture" ] [ img [ src player.picture ] [] ]
+                , div [ class "info" ]
+                    [ div [ class "name" ] [ text player.name ]
+                    , div [ class "id" ] [ text player.id ]
                     ]
                 ]
-            , tbody [] (List.map playerRow players)
             ]
-        ]
-
-
-playerRow : Player -> Html Msg
-playerRow player =
-    tr []
-        [ td [] [ img [ src player.picture ] [] ]
-        , td [] [ text player.id ]
-        , td [] [ text player.name ]
         ]
 
 
 view : Model -> Html Msg
 view model =
     main_ [ class "page" ]
-        [ renderPlayers model.players
+        [ maybePlayers model.players
         ]
