@@ -1,10 +1,8 @@
 # Elm starter
 
-This is a starter kit based in this repo below: 
+A starter kit and reference application based in this repo below:
 
 https://github.com/elm-community/elm-webpack-starter
-
-##Instructions
 
 ### About:
 A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
@@ -18,13 +16,13 @@ A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
 
 ### Install:
 Clone this repo into a new project folder, e.g. `my-elm-project`:
-```
+```shell
 git clone https://github.com/dbeff/elm-starter my-elm-project
 cd my-elm-project
 ```
 
 Re-initialize the project folder as your own repo:
-```
+```shell
 rm -rf .git         # on Windows: rmdir .git /s /q
 git init
 git add .
@@ -32,14 +30,14 @@ git commit -m 'first commit'
 ```
 
 Install all dependencies using the handy `reinstall` script:
-```
+```shell
 npm run reinstall
 ```
 *This does a clean (re)install of all npm and elm packages, plus a global elm install.*
 
 
 ### Serve locally:
-```
+```shell
 npm start
 ```
 * Access app at `http://localhost:8080/`
@@ -52,7 +50,7 @@ http://www.json-generator.com/api/json/get/bOIdZyKTsi?indent=2
 
 
 ### Build & bundle for prod:
-```
+```shell
 npm run build
 ```
 
