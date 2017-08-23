@@ -8,6 +8,7 @@ import Pages.Home
 import Pages.Players
 import Pages.Player
 import Pages.NotFound
+import Components.Header
 
 
 page : Model -> Html Msg
@@ -32,4 +33,7 @@ page model =
 
 view : Model -> Html Msg
 view model =
-    page model
+    div []
+        [ Components.Header.view
+        , page model
+        ]

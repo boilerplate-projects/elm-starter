@@ -8,7 +8,7 @@ import Message exposing (Msg)
 
 view : Model -> String -> Html Msg
 view model id =
-    div [ class "page" ]
+    main_ [ class "page" ]
         [ text "Player - "
         , text ("Id " ++ id)
         ]

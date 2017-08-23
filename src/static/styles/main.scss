@@ -5,3 +5,45 @@
     To import Frontendler Sass Library use:
     @import '~frontendler-sass/frontendler';
 */
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #3a4763;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+
+    .logo {
+        font-weight: bold;
+        padding: 20px;
+        color: #5a6378;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: row;
+
+        a{
+            display: block;
+            padding: 20px;
+            color: #60b5cc;
+        }
+    }
+}
+
+main {
+    padding: 20px;
+}

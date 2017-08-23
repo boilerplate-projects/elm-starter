@@ -8,6 +8,6 @@ import Message exposing (Msg)
 
 view : Model -> Html Msg
 view model =
-    div [ class "page" ]
+    main_ [ class "page" ]
         [ text "NotFound"
         ]
