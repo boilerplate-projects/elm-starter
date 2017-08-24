@@ -7,6 +7,9 @@ A starter kit and reference application based in this repo below:
 https://github.com/elm-community/elm-webpack-starter
 
 
+### Demo:
+
+http://elm-starter.surge.sh/
 
 ### About:
 A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
