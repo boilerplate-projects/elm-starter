@@ -48,10 +48,6 @@ npm start
 * Get coding! The entry point file is `src/elm/Main.elm`
 * Browser will refresh automatically on any file changes..
 
-#### Data
-http://www.json-generator.com/api/json/get/bOIdZyKTsi?indent=2
-
-
 
 ### Build & bundle for prod:
 ```shell
@@ -60,3 +56,6 @@ npm run build
 
 * Files are saved into the `/dist` folder
 * To check it, open `dist/index.html`
+
+### Data used:
+http://www.json-generator.com/api/json/get/bOIdZyKTsi?indent=2
