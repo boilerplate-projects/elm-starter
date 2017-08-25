@@ -1,6 +1,6 @@
 # Elm starter
 
-![image](https://user-images.githubusercontent.com/5122156/29625024-e3dc6660-882a-11e7-835b-195ff0ff2c0b.png)
+![image](https://user-images.githubusercontent.com/5122156/29705333-ca387948-897d-11e7-818d-ce17284b7c14.png)
 
 A starter kit and reference application based in this repo below:
 
