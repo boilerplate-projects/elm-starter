@@ -1,4 +1,4 @@
-module Components.Header exposing (..)
+module Views.Header exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
